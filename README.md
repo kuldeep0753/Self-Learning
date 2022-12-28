@@ -1,2 +1,2 @@
 # Self-Learning
-Here i learn advanced html , CSS , JS to build my confidence.
+Here i learn advance html , CSS , JS to build my confidence.
