@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 // Advantage is it give clear error in console. If we don't use then silently give error, but not in console.
 /*
 let ifRed=false;
@@ -153,8 +153,8 @@ console.log(friends.includes(23));//Give true, it's a number
 if(friends.includes('Sushma')){
     console.log('She is one of my old friend');
 }
-*/
-// Introdeuction of Objects:
+
+// Introduction of Objects:
 const kuldeepArray={
     firstName:'Kuldeep',
     lastName:'Singh',
@@ -189,3 +189,135 @@ kuldeepArray['email']='kushwaha0753';
 console.log(kuldeepArray);
 // Challenge:
 console.log(`${kuldeepArray.firstName} has ${kuldeepArray.friends.length} friends, and his best friend is called ${kuldeepArray.friends[0]}`);
+
+
+// Object Methods:
+const kuldeep={
+    firstName:'Kuldeep',
+    lastName:'Singh',
+    Address: 'Kattigenhalli',
+    birthYear:1999,
+    hasDriverLicense:true,
+    calcAge: function (birthYear){
+         return 2022-birthYear;
+    },
+    // calcAge:function(){
+    //     console.log(this);
+    //     return 2022-this.birthYear;
+    // },
+    calcAge:function(){
+        this.age=2022-this.birthYear;
+        return this.age;
+    },
+    job:'teacher',
+    friends:['Sushma','Vibhu','Roshan'],
+    getSummary: function(){
+        console.log(`${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has a ${this.hasDriverLicense? `Driver's License`:`no Driver's License.`}`);
+    }
+}
+console.log(kuldeep.calcAge());
+// console.log(kuldeep['calcAge'](1998));
+console.log(kuldeep.age);
+
+
+// Challenge:"Kuldeep is a 46-year old teacher and he has a driver's license"
+kuldeep.getSummary();
+
+
+// Control structured: if, if-else,for loop:use for repetitive job
+   for (let i=1;i<=10;i++){
+console.log(`Lifting weights repetition ${i}🥱`);
+}
+
+// Looping Arrays, Breaking and Continue
+const kuldeep=["Kuldeep Singh","Yelhanka",2022-1999,"Software Developer", true,[22,19,28]];
+
+const type=[];
+// for(let i=0;i<kuldeep.length; i++){
+   
+//  console.log(kuldeep[i]);
+//  type.push(typeof kuldeep[i]);
+// }
+// console.log(type);
+console.log("_____continue________");
+for(let i=0;i<kuldeep.length; i++){
+    if(typeof kuldeep[i] === 'string'){
+        continue;
+    }
+ console.log(kuldeep[i]);
+}
+console.log("_____Break________");
+for(let i=0;i<kuldeep.length; i++){
+    if(typeof kuldeep[i] === 'number'){
+        break;
+    }
+ console.log(kuldeep[i]);
+}
+
+// ---------------
+const years=[1997,1999,2001],ages=[];
+
+for(let i=0;i<years.length;i++){
+ ages.push(2022-years[i]);
+}
+console.log(ages);
+
+ 
+// Looping Backwards and Loops in Loops
+const kuldeep=["Kuldeep Singh","Yelhanka",2022-1999,"Software Developer", true,[22,19,28]];
+console.log(kuldeep.length);
+for(let i=kuldeep.length-1;i>=0;i--){
+    console.log(kuldeep[i]);
+}
+
+//Loops in Loops
+for(let i=0;i<5;i++){
+    console.log(`___Rows__ ${i}☠`);
+    for(let j=0;j<5;j++){
+        console.log(`I am Working ${j}`);
+    }
+    
+}
+
+// While Loop:when no.of iterartion is unknown;
+// for (let i=1;i<=10;i++){
+//     console.log(`Lifting weights repetition ${i}🥱`);
+//     }
+// let i=0;
+// while(i<10){
+//     console.log(`Lifting weights repetition ${i}🥱`);
+//     i++;
+// }
+// Dice example:
+let dice=Math.trunc(Math.random()*6)+1;
+while(dice !== 6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random()*6)+1;
+    if(dice===6){
+        console.log(`Loop is end`);
+    }
+}
+*/
+
+// x=5;
+// console.log(check);
+// console.log(x);
+
+
+// var check =function(){
+   
+//     var j=8;
+// //  console.log(i);
+//  console.log(j);
+// }
+// check();
+// // console.log(i);
+// console.log(j);
+'use strict';
+function add(){
+  console.log(this);
+}
+add();
+
+
+
