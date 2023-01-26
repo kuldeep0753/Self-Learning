@@ -1,4 +1,4 @@
-// 'use strict'
+'use strict'
 // Advantage is it give clear error in console. If we don't use then silently give error, but not in console.
 /*
 let ifRed=false;
@@ -298,26 +298,6 @@ while(dice !== 6){
     }
 }
 */
-
-// x=5;
-// console.log(check);
-// console.log(x);
-
-
-// var check =function(){
-   
-//     var j=8;
-// //  console.log(i);
-//  console.log(j);
-// }
-// check();
-// // console.log(i);
-// console.log(j);
-'use strict';
-function add(){
-  console.log(this);
-}
-add();
 
 
 
