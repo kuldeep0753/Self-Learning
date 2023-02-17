@@ -1,3 +1,4 @@
+// Fundamental-1
 /*let check = "working";
 
 if(check=== "working"){alert("maza aa gaya");}
@@ -5,7 +6,7 @@ console.log("check hiting");
 
 let age=28;
 console.log(age);
-let myName ="kuldeep SIngh kUshwaha";
+let myName ="kuldeep SIngh kushwaha";
 console.log(myName);
 
 ** DataTypes are 7 types:
@@ -145,7 +146,7 @@ n=n-1;
 console.log(n);
 */
 //--------------------------------------------------
-// Truly value
+/*// Truly value
 //5 Falsy value: 0,'',undefined,null,NaN
 console.log(Boolean(0)); //false
 console.log(Boolean(undefined));//false
@@ -159,3 +160,102 @@ if(money){
 }else{
     console.log('do not spend')
 }
+*/
+// ---------------------------------
+ /*
+    //Equal operator ==(loose equality) vs ===(strict equality)
+    // Here is type coercion
+    const age=18;
+    if(age=="18"){
+        console.log(`eligible for vote ==(loose equality)`)
+    }
+    // Here type should also be same
+    if(age==="18"){
+        console.log('eligible for vote')
+    }else{console.log(`eligible for vote ===(strict equality)`)}
+
+    //TODO: Always use strict equality;
+   
+    // example 1
+    const fav=Number(prompt('Enter your fav number'));
+
+    if(fav===9){
+        console.log(`Your fav number is here: ${fav}`);
+    }
+    else if(fav===7){ console.log(`Your fav number is here: ${fav} not 9;`);}
+    else{console.log(`Your fav number is not here: 😥`);}5
+   
+    // Example:2
+    const favourite=prompt('Enter your favourite number');
+    console.log(typeof favourite);
+    if(favourite==='9'){
+        console.log(`Your favourite number is here: ${favourite}`);
+    }
+    else if(favourite==='7'){ console.log(`Your favourite number is here: ${favourite} not 9;`);}
+    else{console.log(`Your favourite number is not here: 😥`);}
+ */
+// ------------------------------
+// Logical opertaors:
+/*
+const hasDrivingLicense=true;//A
+const hasGoodVision=false;//B
+
+console.log(hasDrivingLicense && hasGoodVision);
+console.log(hasDrivingLicense || hasGoodVision);
+
+const isTired=false;
+if(hasDrivingLicense && hasGoodVision || !isTired){
+    console.log('Kuldeep should drive');
+}else{console.log(`Some one will drive..`)}
+*/
+// ---------------------------
+// Switch Statement:very less use
+/*
+const din=9;
+switch(din){
+    case 1:
+        console.log(`Monday`);
+        break;
+    case 2:
+        console.log(`Tuesday`);
+        break;
+    case 3:
+        console.log(`Wednesday`);
+        break;
+    case 4:
+        console.log(`Thursday`);
+        break;
+    case 5:
+        console.log(`Friday`);
+        break;
+    case 6:
+        console.log(`Saturday`);
+        break;
+    case 7:
+        console.log(`Sunday`);
+        break;
+    default:
+        console.log(`None`);
+        
+}
+
+// If-else ladder
+const day=5
+if(day==1){ console.log(`Monday`);}
+else if(day==2){ console.log(`Tuesday`);}
+else if(day==3){ console.log(`Wednesday`);}
+else if(day==4){ console.log(`Thursday`);}
+else if(day==5){ console.log(`Friday`);}
+else if(day==6){ console.log(`Saturday`);}
+else if(day==7){ console.log(`Sunday`);}
+else { console.log(`None`);}
+*/
+
+// Statements and Expression
+// Ternary Operator(three part) or Conditional Operator :
+
+const age=23;
+// age>=18 ? console.log(`drink🍻`): console.log(`not allowed 😫`);
+let check=age>=18 ? `beer🍻`: `water 💧`;
+console.log(check);
+console.log(`I like to drink ${check}`);
